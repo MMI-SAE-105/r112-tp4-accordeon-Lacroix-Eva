@@ -4,22 +4,25 @@
 details {
     /*fermé et ouvert*/
     position: relative;
-    width: 130px;
-    transition: all 1s ease-in-out;
+    min-width: 100px;
+    transition: all 0.3s;
+    display: block;
 }
 
 details[open] {
-    width: 300px;
+    transition-duration: 0.3s;
+    display: block;
+    width: 100%;
 }
 
 .accordeon {
-    display: flex;
+    display: grid;
+    width: 150px;
+    gap: 10px;
 }
 
 details>summary {
-    position: absolute;
-    top :0;
-    left: 0;
+    list-style: none;
 }
 
 details>div {
