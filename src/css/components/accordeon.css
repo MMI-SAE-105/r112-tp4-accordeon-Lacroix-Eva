@@ -21,6 +21,11 @@ details[open] {
     gap: 10px;
 }
 
+summary{
+    display: flex;
+    gap: 20px;
+}
+
 details>summary {
     list-style: none;
 }
@@ -35,20 +40,20 @@ details>summary::-webkit-details-marker {
 }
 
 details>summary + * {
-    list-style: none;
+    display: block;
+    margin-top: 10px;
 }
 
 .arrow{
     width: 0;
     height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-    border-left: 40px solid rgb(175, 175, 175);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgb(175, 175, 175);
 }
 
 details[open] .arrow{
     transform: rotate(90deg);
     transition-duration: 0.5s;
     border-left: 30px solid pink;
-
 }
