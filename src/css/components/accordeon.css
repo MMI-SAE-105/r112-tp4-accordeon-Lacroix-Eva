@@ -29,3 +29,20 @@ details>div {
     padding-left: 130px;
     width: 170px;
 }
+
+details>summary::-webkit-details-marker {
+    display: none;
+}
+
+details>summary + * {
+    list-style: none;
+}
+
+.arrow{
+    width: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid rgb(175, 175, 175);
+}
+
