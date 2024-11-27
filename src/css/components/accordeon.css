@@ -11,3 +11,13 @@ details[open] {
     width: 300px;
     transition: width 2s;
 }
+
+.accordeon {
+    display: flex;
+}
+
+details>summary {
+    position: absolute;
+    top :0;
+    left: 0;
+}
