@@ -6,3 +6,8 @@ details {
     position: relative;
     width: 130px;
 }
+
+details[open] {
+    width: 300px;
+    transition: width 2s;
+}
